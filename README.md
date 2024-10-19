@@ -6,4 +6,4 @@ This repository holds the supporting material for the Certified Kubernetes Admin
 [Homelab Installation Procedure](./install/lab-setup/READEME.md)
 
 # kubernetes-the-hard-way
-[[Homelab Installation Procedure](https://github.com/kaium21/kubernetes-the-hard-way-paractics/blob/main/README.md)
+[Homelab Installation Procedure](https://github.com/kaium21/kubernetes-the-hard-way-paractics/blob/main/README.md)
