@@ -377,3 +377,21 @@ Then you can join any number of worker nodes by running the following on each as
 kubeadm join 192.168.175.21:6443 --token 9fqwfv.sjkmdvfny6tc6qlh \
         --discovery-token-ca-cert-hash sha256:201879ef75281311821dff46ed064419f2d631c61246b5c9623a3ee0002b92f2
 ```
+# For checking purpose for non-root user:
+
+## To start using your cluster, you need to run the following as a regular user:
+```
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+## For Root User:
+Alternatively, if you are the root user, you can run:
+```
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+```
+
+kubectl get nodes
+NAME            STATUS   ROLES           AGE     VERSION
+controlnodegp   Ready    control-plane   5m49s   v1.31.2
