@@ -173,7 +173,9 @@ systemctl start crio.service
 
 Disable swap space:
 # make swap off, for permant change /etc/fstab
+```
 swapoff -a
+```
 
 # Change network config:
 ```
